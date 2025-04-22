@@ -52,7 +52,7 @@
                 <div class="container">
                     <div class="top-inner">
                         <div class="logo-outer">
-                            <div class="logo"><a href="#"><img src="assets/images/blossom_logo.jpg"  alt="Logo" style="width: 219px; height: 60px; object-fit: contain;"></a></div>
+                            <div class="logo"><a href="#"><img src="assets/images/blossom_logo-removebg-preview.png"  alt="Logo" style="width: 219px; height: 60px; object-fit: contain;"></a></div>
                         </div>
 
                         <ul class="header-info">
@@ -117,13 +117,7 @@
                             </div> -->
 
                             <!-- menu sidbar -->
-                            <div class="menu-sidebar">
-                                <button>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
+                            
                         </div>
 
                     </div>
@@ -142,472 +136,117 @@
         
         <!--Form Back Drop-->
         <div class="form-back-drop"></div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-        <!-- Hidden Sidebar -->
-        <section class="hidden-bar">
-            <div class="inner-box text-center">
-                <div class="cross-icon"><span class="fa fa-times"></span></div>
-                <div class="title">
-                    <h3>Get Appointment</h3>
-                </div>
-
-                <!--Appointment Form-->
-                <div class="appointment-form">
-                    <form method="post" action="https://soyonexpress.com/html-demos/envarch/contact.html">
-                        <div class="form-group">
-                            <input type="text" name="text" value="" placeholder="Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" value="" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="phone" value="" placeholder="Phone no." required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Message" rows="5"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="theme-btn">Submit now</button>
-                        </div>
-                    </form>
-                </div>
-
-                <!--Social Icons-->
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                </div>
-            </div>
-        </section>
-        <!--End Hidden Sidebar -->
-
-
-        <div class="form-popup" id="formPopup">
-            <style>
-              /* Form Popup Styles */
-              .form-popup {
-                display: none;
-                position: fixed;
-                z-index: 9999;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                overflow: auto;
-                background-color: rgba(0, 0, 0, 0.7);
-                backdrop-filter: blur(5px);
-              }
-              
-              .form-popup-content {
-                background-color: #fff;
-                position: relative;
-                margin: 80px auto;
-                max-width: 450px;
-                width: 90%;
-                border-radius: 15px;
-                box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
-                animation: slideUp 0.5s ease;
-                overflow: hidden;
-              }
-              
-              @keyframes slideUp {
-                from { opacity: 0; transform: translateY(30px); }
-                to { opacity: 1; transform: translateY(0); }
-              }
-              
-              .form-header {
-                background: linear-gradient(135deg, #00486A, #003654);
-                padding: 20px;
-                text-align: center;
-                border-bottom: 4px solid #E84E38;
-              }
-              
-              .logo-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-                margin-bottom: 10px;
-              }
-              
-              .logo-container img {
-                height: 60px;
-                width: auto;
-                object-fit: contain;
-              }
-              
-              .form-title {
-                color: white;
-                font-size: 22px;
-                margin: 0;
-                font-weight: 600;
-                font-family: 'Poppins', Arial, sans-serif;
-              }
-              
-              .form-body {
-                padding: 30px;
-              }
-              
-              .form-group {
-                margin-bottom: 20px;
-              }
-              
-              .form-group label {
-                display: block;
-                margin-bottom: 8px;
-                font-weight: 500;
-                color: #333;
-                font-family: 'Poppins', Arial, sans-serif;
-              }
-              
-              .form-group input {
-                width: 100%;
-                padding: 14px 15px;
-                border: 1px solid #ddd;
-                border-radius: 8px;
-                font-size: 16px;
-                transition: all 0.3s;
-                font-family: 'Poppins', Arial, sans-serif;
-              }
-              
-              .form-group input:focus {
-                border-color: #00486A;
-                box-shadow: 0 0 0 3px rgba(0, 72, 106, 0.15);
-                outline: none;
-              }
-              
-              .form-submit {
-                background-color: #E84E38;
-                color: white;
-                border: none;
-                padding: 15px;
-                width: 100%;
-                font-size: 16px;
-                font-weight: 600;
-                border-radius: 8px;
-                cursor: pointer;
-                transition: all 0.3s;
-                text-transform: uppercase;
-                letter-spacing: 0.5px;
-                font-family: 'Poppins', Arial, sans-serif;
-              }
-              
-              .form-submit:hover {
-                background-color: #00486A;
-                transform: translateY(-3px);
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-              }
-              
-              .form-close {
-                position: absolute;
-                top: 15px;
-                right: 15px;
-                background-color: rgba(255, 255, 255, 0.2);
-                color: white;
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 18px;
-                font-weight: bold;
-                cursor: pointer;
-                border: none;
-                transition: all 0.3s;
-              }
-              
-              .form-close:hover {
-                background-color: rgba(255, 255, 255, 0.4);
-                transform: rotate(90deg);
-              }
-              
-              /* For mobile devices */
-              @media (max-width: 480px) {
-                .form-popup-content {
-                  width: 95%;
-                  margin: 60px auto;
-                }
-                
-                .logo-container img {
-                  height: 45px;
-                }
-                
-                .form-body {
-                  padding: 20px;
-                }
-              }
-            </style>
+       
+        <div id="popupForm" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.7); backdrop-filter: blur(5px); z-index: 9999; justify-content: center; align-items: center; overflow-y: auto;">
+          <div style="width: 90%; max-width: 450px; background: white; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.3); display: flex; flex-direction: row; overflow: hidden; animation: popupAnim 0.4s ease-in-out; margin: 50px auto;">
             
-            <div class="form-popup-content">
-              <div class="form-header">
-                <span class="form-close" onclick="closeFormPopup()">&times;</span>
-                <div class="logo-container">
-                  <img src="assets/images/Rajhans-logo-main.png" alt="Rajhans Logo">
-                  <img src="assets/images/blossom_logo.jpg" alt="Blossom Logo">
-                </div>
-                <h3 class="form-title">Register Your Interest</h3>
+            <!-- Left Promise Panel -->
+            <div style="background: #800038; color: white; padding: 22px 15px; width: 40%; font-family: 'Segoe UI', Arial, sans-serif;">
+              <h3 style="font-size: 18px; margin-top: 0; margin-bottom: 20px; font-weight: 600;">We Promise</h3>
+              
+              <div style="display: flex; align-items: center; margin: 16px 0;">
+                <i class="fa-solid fa-phone" style="margin-right: 8px; font-size: 18px;"></i>
+                <p style="margin: 0; font-size: 14px; font-weight: 500;">Instant Call Back</p>
               </div>
-              <div class="form-body">
-                <form id="interestForm" onsubmit="submitForm(event)">
-                  <div class="form-group">
-                    <label for="name">Your Name*</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="phone">Contact Number*</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" required>
-                  </div>
-                  <button type="submit" class="form-submit">Submit</button>
-                </form>
+              
+              <div style="display: flex; align-items: center; margin: 16px 0;">
+                <i class="fa-solid fa-car" style="margin-right: 8px; font-size: 18px;"></i>
+                <p style="margin: 0; font-size: 14px; font-weight: 500;">Free Site Visit</p>
+              </div>
+              
+              <div style="display: flex; align-items: center; margin: 16px 0;">
+                <span style="margin-right: 8px; font-size: 18px;">&#36;</span>
+                <p style="margin: 0; font-size: 14px; font-weight: 500;">Unmatched Price</p>
               </div>
             </div>
-          </div>
-          
-          <script>
-            // Function to open the form popup
-            function openFormPopup() {
-              document.getElementById('formPopup').style.display = 'block';
-              document.body.style.overflow = 'hidden'; // Prevent scrolling
-            }
-            
-            // Function to close the form popup
-            function closeFormPopup() {
-              document.getElementById('formPopup').style.display = 'none';
-              document.body.style.overflow = 'auto'; // Re-enable scrolling
+        
+            <!-- Right Form -->
+            <div style="padding: 22px 20px; width: 60%; position: relative; font-family: 'Segoe UI', Arial, sans-serif;">
+              <span onclick="closeForm()" style="position: absolute; right: 12px; top: 12px; cursor: pointer; font-size: 20px; color: #666;">&times;</span>
               
-              // Set a cookie so this popup won't show again soon
-              setCookie('formShown', 'true', 1); // 1 day
-            }
-            
-            // Handle form submission
-            function submitForm(event) {
-              event.preventDefault();
+              <!-- Added logos container -->
+              <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 15px;">
+                <img src="assets/images/Rajhans-logo-main-removebg-preview.png" alt="Rajhans Logo" style="height: 40px; width: auto; object-fit: contain;">
+                <img src="assets/images/blossom_logo-removebg-preview.png" alt="Blossom Logo" style="height: 40px; width: auto; object-fit: contain;">
+              </div>
               
-              // Get form data
-              const name = document.getElementById('name').value;
-              const phone = document.getElementById('phone').value;
+              <h3 style="color: #800038; margin-top: 0; margin-bottom: 10px; font-size: 20px; font-weight: 600; text-align: center;">Virtual Site Visit</h3>
+              <p style="font-size: 13px; color: #444; margin-bottom: 20px; line-height: 1.4; text-align: center;">Register Here And Avail The <span style="color: #e84e38; font-weight: 600;">Best Offers!!</span></p>
               
-              // Here you would typically send this data to your server
-              console.log('Form submitted:', { name, phone });
+              <input type="text" placeholder="Name" style="width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; box-sizing: border-box;">
               
-              // Show success message
-              alert('Thank you for your interest! Our team will contact you shortly.');
+              <input type="text" placeholder="Mobile No" style="width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; box-sizing: border-box;">
               
-              // Reset form and close popup
-              document.getElementById('interestForm').reset();
-              closeFormPopup();
-            }
-            
-            // Close form if user clicks outside the form content
-            window.addEventListener('click', function(event) {
-              if (event.target === document.getElementById('formPopup')) {
-                closeFormPopup();
-              }
-            });
-            
-            // Cookie functions to control popup frequency
-            function setCookie(name, value, days) {
-              var expires = '';
-              if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                expires = '; expires=' + date.toUTCString();
-              }
-              document.cookie = name + '=' + (value || '') + expires + '; path=/';
-            }
-            
-            function getCookie(name) {
-              var nameEQ = name + '=';
-              var ca = document.cookie.split(';');
-              for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-              }
-              return null;
-            }
-            
-            // To connect this with your banner popup, add this function in the banner's script
-            // and call it when closing the banner:
-            
-            /*
-            function closeBannerPopup() {
-              document.getElementById('bannerPopup').style.display = 'none';
+              <input type="email" placeholder="E-Mail Address" style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; box-sizing: border-box;">
               
-              // Check if form should be shown
-              var formShown = getCookie('formShown');
-              if (formShown !== 'true') {
-                // Show form popup after banner closes
-                setTimeout(function() {
-                  openFormPopup();
-                }, 500); // Short delay for better UX
-              } else {
-                document.body.style.overflow = 'auto'; // Re-enable scrolling
-              }
-              
-              // Set banner cookie
-              setCookie('bannerShown', 'true', 1);
-            }
-            */
-          </script>
-
-        <div class="banner-popup" id="bannerPopup">
-            <style>
-              /* Banner Popup Styles */
-              .banner-popup {
-                display: none;
-                position: fixed;
-                z-index: 9999;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                overflow: auto;
-                background-color: rgba(0, 0, 0, 0.7);
-                backdrop-filter: blur(5px);
-              }
-              
-              .banner-popup-content {
-                position: relative;
-                margin: 80px auto;
-                max-width: 600px; /* Reduced from 800px */
-                width: 80%; /* Reduced from 90% */
-                animation: fadeIn 0.5s ease;
-              }
-              
-              @keyframes fadeIn {
-                from { opacity: 0; transform: translateY(-20px); }
-                to { opacity: 1; transform: translateY(0); }
-              }
-              
-              .banner-popup-image {
-                width: 100%;
-                border-radius: 10px;
-                box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
-              }
-              
-              .banner-close {
-                position: absolute;
-                top: -15px;
-                right: -15px;
-                background-color: #E84E38;
-                color: white;
-                width: 35px;
-                height: 35px;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 20px;
-                font-weight: bold;
-                cursor: pointer;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-                border: 2px solid white;
-                transition: all 0.3s ease;
-              }
-              
-              .banner-close:hover {
-                background-color: #00486A;
-                transform: scale(1.1);
-              }
-              
-              /* For mobile devices */
-              @media (max-width: 768px) {
-                .banner-popup-content {
-                  margin: 100px auto;
-                  width: 85%;
-                  max-width: 450px;
-                }
-              }
-              
-              /* For very small screens */
-              @media (max-width: 480px) {
-                .banner-popup-content {
-                  margin: 70px auto;
-                  width: 90%;
-                }
-              }
-            </style>
-            
-            <div class="banner-popup-content">
-              <div class="banner-close" onclick="closeBannerPopup()">&times;</div>
-              <img src="assets/images/banner.jpeg" alt="Special Promotion Banner" class="banner-popup-image">
+              <button style="background: #800038; color: white; padding: 12px; width: 100%; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer; transition: background-color 0.3s;">Start Tour</button>
             </div>
           </div>
+        </div>
+        
+        <!-- POPUP ANIMATION -->
+        <style>
+          @keyframes popupAnim {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+          }
           
-          <script>
-            // Show the banner popup when the page loads
-window.addEventListener('load', function() {
-  // Wait 2 seconds before showing the popup
-  setTimeout(function() {
-    document.getElementById('bannerPopup').style.display = 'block';
-    document.body.style.overflow = 'hidden'; // Prevent scrolling when popup is open
-  }, 2000);
-  
-  // Set a cookie to control how often the popup appears
-  checkCookieAndShowBanner();
-});
-
-function closeBannerPopup() {
-  document.getElementById('bannerPopup').style.display = 'none';
-  
-  // Always show the form popup after banner closes
-  // by resetting the formShown cookie
-  setCookie('formShown', 'false', 1); // Reset the form cookie
-  
-  // Show form popup after banner closes
-  setTimeout(function() {
-    openFormPopup();
-  }, 500); // Short delay for better UX
-  
-  // Set banner cookie
-  setCookie('bannerShown', 'true', 1);
-}
-
-// Close popup if user clicks outside of the banner content
-window.addEventListener('click', function(event) {
-  if (event.target === document.getElementById('bannerPopup')) {
-    closeBannerPopup();
-  }
-});
-
-// Cookie functions to control popup frequency
-function setCookie(name, value, days) {
-  var expires = '';
-  if (days) {
-    var date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    expires = '; expires=' + date.toUTCString();
-  }
-  document.cookie = name + '=' + (value || '') + expires + '; path=/';
-}
-
-function getCookie(name) {
-  var nameEQ = name + '=';
-  var ca = document.cookie.split(';');
-  for (var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-  }
-  return null;
-}
-
-function checkCookieAndShowBanner() {
-  var bannerShown = getCookie('bannerShown');
-  if (bannerShown !== 'true') {
-    setTimeout(function() {
-      document.getElementById('bannerPopup').style.display = 'block';
-      document.body.style.overflow = 'hidden';
-    }, 2000);
-  }
-}
-  
-</script>
-          </script>
+          /* Add hover effect for button */
+          #popupForm button:hover {
+            background-color: #67002e !important;
+          }
+          
+          /* Add focus styles for inputs */
+          #popupForm input:focus {
+            border-color: #800038 !important;
+            box-shadow: 0 0 0 2px rgba(128, 0, 56, 0.1) !important;
+            outline: none !important;
+          }
+          
+          /* Responsive adjustments */
+          @media (max-width: 600px) {
+            #popupForm > div {
+              flex-direction: column;
+              margin: 20px auto;
+            }
+            #popupForm > div > div:first-child {
+              width: 100%;
+              padding: 15px;
+            }
+            #popupForm > div > div:last-child {
+              width: 100%;
+            }
+          }
+        </style>
+        
+        <script>
+          // Function to show the popup form
+          function showForm() {
+            document.getElementById('popupForm').style.display = 'flex';
+            // We're not disabling scrolling on the body anymore
+          }
+          
+          // Function to close the popup form
+          function closeForm() {
+            document.getElementById('popupForm').style.display = 'none';
+          }
+          
+          // Show popup after 2 seconds when page loads (optional)
+          window.addEventListener('load', function() {
+            setTimeout(function() {
+              showForm();
+            }, 2000);
+          });
+          
+          // Close popup when clicking outside the form
+          document.getElementById('popupForm').addEventListener('click', function(e) {
+            if (e.target === this) {
+              closeForm();
+            }
+          });
+        </script>
 
 
           
@@ -616,31 +255,194 @@ function checkCookieAndShowBanner() {
         <!--==================================================================== 
             Start Hero Section
         =====================================================================-->
-        <section class="hero-section text-center mt-110 rmt-70" style="background-image: url('assets/images/slide2.png');">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="text-bold text-white">Let Your Home Be</h1>
-                    <h1 class="text-lighter">Unique and Stylish</h1>
-                    <a class="scroll-down scroll" href="#wordpress">
-                        <div class="scroll-box"></div>
-                    </a>
-                </div>
-            </div>
+
+ 
+        <section class="hero-section text-center mt-110 rmt-70" style="background-image: url('assets/images/slide1.png'); height: 350px; background-size: cover;">
         </section>
+        
         <!--==================================================================== 
             End Hero Section
         =====================================================================-->
+        <!-- Branding Card -->
+    
+              
+
+
+<!-- Card Structure -->
+
+<!-- Branding Card -->
+<div class="highlight-card" style="margin-top: -150px; width: 400px; margin-left: auto; margin-right: auto; padding: 30px 20px; background: #fff; border-radius: 16px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); text-align: center; font-family: sans-serif;">
+  <p style="color: #800038; font-weight: 600; margin-bottom: 10px;">PRESENTING</p>
+
+  <img src="assets/images/blossom_logo-removebg-preview.png" alt="Blossom" style="width: 220px; margin-bottom: 10px;" />
+  <p style="font-size: 14px; font-style: italic; color: #5a5a5a; margin: 0 0 10px;">Where life blooms...</p>
+
+  <p style="font-size: 16px; font-weight: 700; color: #800038; margin: 0 0 10px;">At Vasai West by</p>
+
+  <img src="assets/images/Rajhans-logo-main-removebg-preview.png" alt="Rajhans" style="width: 140px; margin: 10px auto 20px;" />
+
+  <!-- Highlights with animation -->
+  <div style="display: flex; flex-direction: column; gap: 12px;">
+    <div style="background: #800038; color: white; padding: 12px 20px; border-radius: 10px; font-weight: 600; animation: popInOut 1s ease-in-out infinite; transform-origin: center;">16 STOREY TOWER</div>
+    <div style="background: #800038; color: white; padding: 12px 20px; border-radius: 10px; font-weight: 600; animation: popInOut 1s ease-in-out infinite; transform-origin: center;">1, 2 AND 3 BHK</div>
+    <div style="background: #800038; color: white; padding: 12px 20px; border-radius: 10px; font-weight: 600; animation: popInOut 1s ease-in-out infinite; transform-origin: center;">10:90 PAYMENT PLAN</div>
+    <div style="background: #800038; color: white; padding: 12px 20px; border-radius: 10px; font-weight: 600; animation: popInOut 1s ease-in-out infinite; transform-origin: center;">SPOT BOOKING OFFER</div>
+  </div>
+</div>
+
+<!-- Inline animation CSS -->
+<style>
+@keyframes popInOut {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+</style>
+<br>
+
+<h2 style="text-align: center; font-size: 28px; font-weight: 700; color: #800038; margin-top: 40px; margin-bottom: 20px; font-family: sans-serif;">
+  PRICING PLANS
+</h2>
+<!-- Add this in the <head> for icons (optional but matches your style) -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- VIEW BUTTONS TABLE EXAMPLE -->
+  <table style="width:100%; border-collapse: collapse; font-family: 'Segoe UI', Arial, sans-serif;">
+    <thead>
+        <tr style="background-color: #2c3e50; color: white;">
+            <th style="padding: 12px 8px; text-align: left;">CONFIGURATION</th>
+            <th style="padding: 12px 8px; text-align: left;">CARPET AREA</th>
+            <th style="padding: 12px 8px; text-align: left;">PRICING</th>
+            <th style="padding: 12px 8px; text-align: center;">PRICE SHEET</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="background-color: #f8f8f8; border-bottom: 1px solid #eaeaea;">
+            <td style="padding: 12px 8px;">1 BHK</td>
+            <td style="padding: 12px 8px; white-space: nowrap;">500 Sq.Ft</td>
+            <td style="padding: 12px 8px; white-space: nowrap;">57.70 Lacs*</td>
+            <td style="padding: 12px 8px; text-align: center;">
+              <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+        </tr>
+        <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
+            <td style="padding: 12px 8px;">2 BHK</td>
+            <td style="padding: 12px 8px; white-space: nowrap;">600 Sq.Ft</td>
+            <td style="padding: 12px 8px; white-space: nowrap;">69 Lacs*</td>
+            <td style="padding: 12px 8px; text-align: center;">
+                <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+            </td>
+        </tr>
+        <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
+          <td style="padding: 12px 8px;">2 BHK</td>
+          <td style="padding: 12px 8px; white-space: nowrap;">600 Sq.Ft</td>
+          <td style="padding: 12px 8px; white-space: nowrap;">69 Lacs*</td>
+          <td style="padding: 12px 8px; text-align: center;">
+          <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+          </td>
+      </tr>
+      <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
+        <td style="padding: 12px 8px;">2 BHK</td>
+        <td style="padding: 12px 8px; white-space: nowrap;">600 Sq.Ft</td>
+        <td style="padding: 12px 8px; white-space: nowrap;">69 Lacs*</td>
+        <td style="padding: 12px 8px; text-align: center;">
+                          <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+        </td>
+    </tr>
+    <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
+      <td style="padding: 12px 8px;">2 BHK</td>
+      <td style="padding: 12px 8px; white-space: nowrap;">600 Sq.Ft</td>
+      <td style="padding: 12px 8px; white-space: nowrap;">69 Lacs*</td>
+      <td style="padding: 12px 8px; text-align: center;">
+                        <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+      </td>
+  </tr>
+  <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
+    <td style="padding: 12px 8px;">2 BHK</td>
+    <td style="padding: 12px 8px; white-space: nowrap;">600 Sq.Ft</td>
+    <td style="padding: 12px 8px; white-space: nowrap;">69 Lacs*</td>
+    <td style="padding: 12px 8px; text-align: center;">
+                      <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+    </td>
+</tr>
+<tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
+  <td style="padding: 12px 8px;">2 BHK</td>
+  <td style="padding: 12px 8px; white-space: nowrap;">600 Sq.Ft</td>
+  <td style="padding: 12px 8px; white-space: nowrap;">69 Lacs*</td>
+  <td style="padding: 12px 8px; text-align: center;">
+                    <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+  </td>
+</tr>
+        <tr style="background-color: #f8f8f8; border-bottom: 1px solid #eaeaea;">
+            <td style="padding: 12px 8px;">2 BHK</td>
+            <td style="padding: 12px 8px; white-space: nowrap;">650 Sq.Ft</td>
+            <td style="padding: 12px 8px; white-space: nowrap;">71 Lacs*</td>
+            <td style="padding: 12px 8px; text-align: center;">
+                <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+            </td>
+        </tr>
+    </tbody>
+</table>
+  
+  <!-- POP-UP FORM -->
+  <div id="popupForm" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.5); z-index: 9999; justify-content: center; align-items: center;">
+    <div style="width: 90%; max-width: 450px; background: white; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); display: flex; flex-direction: row; overflow: hidden; animation: popupAnim 0.4s ease-in-out;">
+      
+      <!-- Left Promise Panel -->
+      <div style="background: #800038; color: white; padding: 20px; width: 45%;">
+        <h3 style="font-size: 16px; margin-top: 0;">We Promise</h3>
+        <p style="margin: 12px 0;"><span class="material-icons" style="vertical-align: middle;">call</span> Instant Call Back</p>
+        <p style="margin: 12px 0;"><span class="material-icons" style="vertical-align: middle;">directions_car</span> Free Site Visit</p>
+        <p style="margin: 12px 0;"><span class="material-icons" style="vertical-align: middle;">attach_money</span> Unmatched Price</p>
+      </div>
+  
+      <!-- Right Form -->
+      <div style="padding: 20px; width: 55%; position: relative;">
+        <span onclick="closeForm()" style="position: absolute; right: 10px; top: 10px; cursor: pointer; font-size: 18px;">&times;</span>
+        <h3 style="color: #800038; margin-bottom: 10px;">Virtual Site Visit</h3>
+        <p style="font-size: 13px; color: #444; margin-bottom: 15px;">Register Here And Avail The <span style="color: red;">Best Offers!!</span></p>
+        <input type="text" placeholder="Name" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 6px;">
+        <input type="text" placeholder="Mobile No" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 6px;">
+        <input type="email" placeholder="E-Mail Address" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px;">
+        <button style="background: #800038; color: white; padding: 10px; width: 100%; border: none; border-radius: 6px;">Start Tour</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- POPUP ANIMATION -->
+  <style>
+    @keyframes popupAnim {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+  
+  <!-- SCRIPT -->
+  <script>
+    function openForm() {
+      document.getElementById("popupForm").style.display = "flex";
+    }
+    function closeForm() {
+      document.getElementById("popupForm").style.display = "none";
+    }
+  </script>
+  
+        
+
+        
 
         <section id="about-us" style="text-align: center; padding: 40px;">
             <h2>About Us</h2>
             
             <div style="display: flex; justify-content: center; gap: 40px; align-items: center; flex-wrap: wrap;">
               <div>
-                <img src="assets/images/blossom_logo.jpg" alt="Blossom Logo" style="max-width: 200px; height: auto;" />
+                <img src="assets/images/blossom_logo-removebg-preview.png" alt="Blossom Logo" style="max-width: 200px; height: auto;" />
               </div>
           
               <div>
-                <img src="assets/images/Rajhans-logo-main.png" alt="Rajhans Kshitij Logo" style="max-width: 200px; height: auto;" />
+                <img src="assets/images/Rajhans-logo-main-removebg-preview.png" alt="Rajhans Kshitij Logo" style="max-width: 200px; height: auto;" />
               </div>
             </div>
           </section>
@@ -997,6 +799,7 @@ function checkCookieAndShowBanner() {
             </script>
           </div>
 
+          
 
           <section class="team-section mb-240" style="background-image: url('assets/images/team/team-bg.png');">
             <div class="team-wrap">
