@@ -2,13 +2,13 @@
 <html lang="zxx">
 
 
-<!-- Mirrored from soyonexpress.com/html-demos/envarch/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Apr 2025 17:19:36 GMT -->
+<!-- Mirrored from soyonexpress.com/html-demos/Rajhans/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Apr 2025 17:19:36 GMT -->
 <head>
     <meta charset="utf-8">
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <title>EnvArch - Architecture and Single Property HTML5 Template</title>
+    <title>Rajhans - Architecture and Single Property HTML5 Template</title>
 
     <!-- Fav Icons -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
@@ -173,7 +173,7 @@
               </div>
               
               <h3 style="color: #800038; margin-top: 0; margin-bottom: 10px; font-size: 20px; font-weight: 600; text-align: center;">Virtual Site Visit</h3>
-              <p style="font-size: 13px; color: #444; margin-bottom: 20px; line-height: 1.4; text-align: center;">Register Here And Avail The <span style="color: #e84e38; font-weight: 600;">Best Offers!!</span></p>
+              <p style="font-size: 13px; color: #444; margin-bottom: 20px; line-height: 1.4; text-align: center;">Register Here And Avail The <span style="color: #ca9c6a; font-weight: 600;">Best Offers!!</span></p>
               
               <input type="text" placeholder="Name" style="width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; box-sizing: border-box;">
               
@@ -431,6 +431,7 @@
   
         
 
+
         
 
         <section id="about-us" style="text-align: center; padding: 40px;">
@@ -507,7 +508,7 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background: rgba(0, 72, 105, 0.8);
+                background: #ca9c6a;
                 color: white;
                 padding: 15px;
                 font-size: 16px;
@@ -519,7 +520,7 @@
                 position: absolute;
                 top: 15px;
                 right: 15px;
-                background-color: #E84E38;
+                background-color: #ca9c6a;
                 color: white;
                 font-size: 12px;
                 font-weight: 600;
@@ -534,7 +535,7 @@
               }
               
               .item-enquiry-btn:hover {
-                background-color: #00486A;
+                background-color: black;
                 transform: translateY(-2px);
               }
               
@@ -545,7 +546,7 @@
               
               .project-highlights-btn {
                 display: inline-block;
-                background-color: #00486A;
+                background-color: #ca9c6a;
                 color: white;
                 font-size: 18px;
                 font-weight: 600;
@@ -561,7 +562,7 @@
               }
               
               .project-highlights-btn:hover {
-                background-color: #E84E38;
+                background-color: #ca9c6a;
                 transform: translateY(-3px);
                 box-shadow: 0 6px 20px rgba(232, 78, 56, 0.3);
               }
@@ -615,7 +616,7 @@
               }
               
               .enquiry-form h3 {
-                color: #00486A;
+                color: #ca9c6a;
                 margin-bottom: 25px;
                 text-align: center;
                 font-size: 24px;
@@ -641,7 +642,7 @@
               }
               
               .form-submit {
-                background-color: #00486A;
+                background-color: #ca9c6a;
                 color: white;
                 border: none;
                 padding: 12px 30px;
@@ -654,7 +655,7 @@
               }
               
               .form-submit:hover {
-                background-color: #E84E38;
+                background-color: #ca9c6a;
               }
               
               @media (max-width: 768px) {
@@ -683,7 +684,85 @@
                 }
               }
             </style>
-          
+
+
+                        <!-- book a vist and call now btn -->
+                        
+                        <div class="fixed-button-container">
+                            <a href="tel:+1234567890" class="btn btn-call ringing">Call Now</a>
+                            <button onclick="openForm()" class="btn btn-book">Book Site Visit</button>
+                        </div>
+                        
+                        <style>
+                        /* Fixed div container */
+                        .fixed-button-container {
+                            position: fixed;
+                            bottom: 20px;
+                            left: 0;
+                            right: 0;
+                            display: flex;
+                            justify-content: center;
+                            gap: 20px;
+                            z-index: 1000;
+                        }
+                        
+                        /* Button styles */
+                        .btn {
+                            padding: 12px 30px;
+                            border-radius: 50px;
+                            border: none;
+                            color: white;
+                            font-weight: bold;
+                            cursor: pointer;
+                            font-size: 16px;
+                            text-align: center;
+                        }
+                        
+                        .btn-call {
+                            background-color: #11a683;
+                            position: relative;
+                            text-decoration: none;
+                        }
+                        
+                        .btn-book {
+                            background-color: #120b29;
+                            font-weight: 600;
+                        }
+                        
+                        /* Enhanced ringing animation */
+                        .ringing {
+                            animation: ring 2s infinite ease-in-out;
+                        }
+                        
+                        @keyframes ring {
+                            0% { transform: rotate(0deg) scale(1); }
+                            1% { transform: rotate(10deg) scale(1.1); }
+                            3% { transform: rotate(-10deg) scale(1.1); }
+                            5% { transform: rotate(10deg) scale(1.1); }
+                            7% { transform: rotate(-10deg) scale(1.1); }
+                            9% { transform: rotate(10deg) scale(1.1); }
+                            11% { transform: rotate(-10deg) scale(1.1); }
+                            13% { transform: rotate(10deg) scale(1.1); }
+                            15% { transform: rotate(-10deg) scale(1.1); }
+                            17% { transform: rotate(8deg) scale(1.05); }
+                            19% { transform: rotate(-8deg) scale(1.05); }
+                            21% { transform: rotate(6deg) scale(1.05); }
+                            23% { transform: rotate(-6deg) scale(1.05); }
+                            25% { transform: rotate(4deg) scale(1.02); }
+                            27% { transform: rotate(-4deg) scale(1.02); }
+                            29% { transform: rotate(2deg) scale(1.01); }
+                            31% { transform: rotate(-2deg) scale(1.01); }
+                            33% { transform: rotate(0deg) scale(1); }
+                            100% { transform: rotate(0deg) scale(1); }
+                        }
+                        </style>
+                        
+                        
+
+
+
+
+
             <div class="project-highlights-title">
               <h2>Project Highlights</h2>
               <p>Discover the exclusive features and amenities that make Blossom residences the perfect place to call home.</p>
@@ -798,6 +877,9 @@
               }
             </script>
           </div>
+
+          <br>
+          
 
           <div style="text-align: center; width: 100%;">
             <h1 style="font-size: 40px; font-weight: 80; font-family: 'Montserrat', 'Roboto Condensed', 'Impact', sans-serif; color: #222; display: inline-block; text-transform: none; letter-spacing: -0.5px; margin: 0;">
@@ -1022,7 +1104,7 @@
       </script>
       
 
-      <div style="font-family: Raleway; background-color: white; margin:0; padding:0; box-sizing: border-box;">
+      <div style="font-family: Raleway; background-color:white; margin:0; padding:0; box-sizing: border-box;">
         <div style="width: 100%; display: flex; justify-content: center;">
             <h1 style="text-align: center; font-size: 2.0em; letter-spacing: 1px; padding: 40px; color: black;">Floor Plans</h1>
           </div>      
@@ -1093,9 +1175,228 @@
         </div>
       </div>
       
-          
-
-
+      <div class="faq-container">
+        <h2>Within Touching Distance</h2>
+      
+        <div class="faq-category">
+          <h3 onclick="toggleList(this)">
+            <span class="title-text">Shopping</span>
+            <span class="arrow">▶</span>
+          </h3>
+          <ul>
+            <li>Super Market Wala - 0.35 Km</li>
+            <li>D-Mart - 1.40 Km</li>
+            <li>Dattani Square Mall - 2.00 Km</li>
+            <li>Reliance Digital - 2.00 Km</li>
+          </ul>
+        </div>
+      
+        <div class="faq-category">
+          <h3 onclick="toggleList(this)">
+            <span class="title-text">Food</span>
+            <span class="arrow">▶</span>
+          </h3>
+          <ul>
+            <li>Burger King - 1.00 Km</li>
+            <li>McDonald's - 1.00 Km</li>
+            <li>Pavilion Restaurant - 1.10 Km</li>
+            <li>Madhuram Hotel - 2.30 Km</li>
+          </ul>
+        </div>
+      
+        <div class="faq-category">
+          <h3 onclick="toggleList(this)">
+            <span class="title-text">Education</span>
+            <span class="arrow">▶</span>
+          </h3>
+          <ul>
+            <li>Euro Kids Pre-School - 0.35 Km</li>
+            <li>St. Augustine High School - 1.00 Km</li>
+            <li>Nazreth Convent School - 0.65 Km</li>
+            <li>Mount Carmel School - 0.180 Km</li>
+            <li>Podar International School - 2.00 Km</li>
+          </ul>
+        </div>
+      
+        <div class="faq-category">
+          <h3 onclick="toggleList(this)">
+            <span class="title-text">Hospitals</span>
+            <span class="arrow">▶</span>
+          </h3>
+          <ul>
+            <li>Navjeevan Women Hospital - 1.00 Km</li>
+            <li>Cardinal Gracias Hospital - 2.30 Km</li>
+            <li>Mukesh Patil Women Care - 2.10 Km</li>
+            <li>Vikas Children Hospital - 2.30 Km</li>
+          </ul>
+        </div>
+      
+        <div class="faq-category">
+          <h3 onclick="toggleList(this)">
+            <span class="title-text">Banks & ATMs</span>
+            <span class="arrow">▶</span>
+          </h3>
+          <ul>
+            <li>Vasai Vikas Sahakari Bank Ltd. - 1.00 Km</li>
+            <li>State Bank of India - 0.85 Km</li>
+            <li>IDBI Bank - 1.10 Km</li>
+            <li>Bassein Catholic Co-Op Bank - 0.85 Km</li>
+            <li>Kotak Mahindra Bank - 1.30 Km</li>
+            <li>The Federal Bank - 1.30 Km</li>
+          </ul>
+        </div>
+      
+        <div class="faq-category">
+          <h3 onclick="toggleList(this)">
+            <span class="title-text">Connectivity</span>
+            <span class="arrow">▶</span>
+          </h3>
+          <ul>
+            <li>Vasai Railway Station - 2.85 Km</li>
+            <li>RO RO Ferry Vasai Fort - 6.70 Km</li>
+          </ul>
+        </div>
+      
+        <div class="faq-category">
+          <h3 onclick="toggleList(this)">
+            <span class="title-text">Leisure</span>
+            <span class="arrow">▶</span>
+          </h3>
+          <ul>
+            <li>Vasai Fort - 6.20 Km</li>
+            <li>Suruchi Beach - 5.90 Km</li>
+            <li>Miraj Cinema - 1.00 Km</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- CSS -->
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+          background: white;
+          font-family: 'Poppins', sans-serif;
+        }
+      
+        .faq-container {
+          width: 100%; /* Removed the extra width restriction */
+          margin: 20px auto; /* Reduced the margin to minimize the white space */
+          padding: 0; /* Removed padding */
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+      
+        h2 {
+          text-align: center;
+          margin-bottom: 40px;
+          color: #333;
+          font-weight: 700;
+          font-size: 2.5rem;
+          letter-spacing: 1px;
+        }
+      
+        .faq-category {
+          margin-bottom: 16px;
+          border-radius: 12px;
+          overflow: hidden;
+          background: #ffd95c;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+          transition: transform 0.3s ease-in-out;
+        }
+      
+        .faq-category:hover {
+          transform: scale(1.05);
+        }
+      
+        .faq-category h3 {
+          margin: 0;
+          padding: 18px 25px;
+          cursor: pointer;
+          font-size: 22px;
+          background: linear-gradient(135deg, #ca9c6a, #e5b15c);
+          color:white;
+          font-weight: 700;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: background 0.3s, box-shadow 0.3s;
+          border-radius: 8px;
+        }
+      
+        .faq-category h3:hover {
+          background: linear-gradient(135deg, #b78b5c, #e49d5c);
+          box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+      
+        .faq-category ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          max-height: 0;
+          overflow: hidden;
+          background: white;
+          transition: max-height 0.4s ease, padding 0.3s ease;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+        }
+      
+        .faq-category ul li {
+          padding: 18px 25px;
+          border-bottom: 1px solid #e1c9a6;
+          font-size: 18px;
+          color: #555;
+          transition: background 0.3s, color 0.3s;
+          cursor: pointer;
+        }
+      
+        .faq-category ul li:hover {
+          background-color: #f5e7d8;
+          color: #333;
+        }
+      
+        .faq-category ul li:last-child {
+          border-bottom: none;
+        }
+      
+        .arrow {
+          transition: transform 0.3s ease;
+          font-size: 20px;
+        }
+      
+        .rotate {
+          transform: rotate(90deg);
+        }
+      </style>
+      
+      <!-- JavaScript -->
+      <script>
+        function toggleList(header) {
+          var list = header.nextElementSibling;
+          var arrow = header.querySelector('.arrow');
+      
+          if (list.style.maxHeight) {
+            list.style.maxHeight = null;
+            list.style.padding = "0";
+            arrow.classList.remove('rotate');
+          } else {
+            document.querySelectorAll('.faq-category ul').forEach(function(ul) {
+              ul.style.maxHeight = null;
+              ul.style.padding = "0";
+            });
+            document.querySelectorAll('.faq-category .arrow').forEach(function(a) {
+              a.classList.remove('rotate');
+            });
+      
+            list.style.maxHeight = list.scrollHeight + "px";
+            list.style.padding = "10px 0";
+            arrow.classList.add('rotate');
+          }
+        }
+      </script>
+      
+            
+      
 
         <!--==================================================================== 
             Start Services Section
@@ -1615,5 +1916,5 @@
 </body>
 
 
-<!-- Mirrored from soyonexpress.com/html-demos/envarch/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Apr 2025 17:19:51 GMT -->
+<!-- Mirrored from soyonexpress.com/html-demos/Rajhans/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Apr 2025 17:19:51 GMT -->
 </html>
