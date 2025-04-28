@@ -167,9 +167,9 @@
               <span onclick="closeForm()" style="position: absolute; right: 12px; top: 12px; cursor: pointer; font-size: 20px; color: #666;">&times;</span>
               
               <!-- Added logos container -->
-              <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 15px;">
-                <img src="assets/images/Rajhans-logo-main-removebg-preview.png" alt="Rajhans Logo" style="height: 40px; width: auto; object-fit: contain;">
-                <img src="assets/images/blossom_logo-removebg-preview.png" alt="Blossom Logo" style="height: 40px; width: auto; object-fit: contain;">
+              <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+                <img src="assets/images/Rajhans-logo-main-removebg-preview.png" alt="Rajhans Logo" style="max-width: 100px; height: auto; object-fit: contain;">
+                <img src="assets/images/blossom_logo-removebg-preview.png" alt="Blossom Logo" style="max-width: 100px; height: auto; object-fit: contain;">
               </div>
               
               <h3 style="color: #800038; margin-top: 0; margin-bottom: 10px; font-size: 20px; font-weight: 600; text-align: center;">Virtual Site Visit</h3>
@@ -799,72 +799,301 @@
             </script>
           </div>
 
-          
+          <div style="text-align: center; width: 100%;">
+            <h1 style="font-size: 40px; font-weight: 80; font-family: 'Montserrat', 'Roboto Condensed', 'Impact', sans-serif; color: #222; display: inline-block; text-transform: none; letter-spacing: -0.5px; margin: 0;">
+              Amenities
+            </h1>
 
-          <section class="team-section mb-240" style="background-image: url('assets/images/team/team-bg.png');">
-            <div class="team-wrap">
-                <div class="container">
-                    <div class="section-title text-white text-center mb-55">
-                        <h2>AMENTITIES</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="team-item">
-                                <img src="assets/images/am2.png" alt="Team">
-                                <div class="team-des">
-                                    <h3>Recreation for Relaxation</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="team-item">
-                                <img src="assets/images/am5.png" alt="Team">
-                                <div class="team-des">
-                                    <h3>Play Arena for Child Prodigies</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="team-item">
-                                <img src="assets/images/am6.png" alt="Team">
-                                <div class="team-des">
-                                    <h3>Jog your Way to Wellness</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                   
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="team-item">
-                                <img src="assets/images/am1.png" alt="Team">
-                                <div class="team-des">
-                                    <h3>For Parties and After Parties</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="team-item">
-                                <img src="assets/images/am7.png" alt="Team">
-                                <div class="team-des">
-                                    <h3>Aim for the Ultimate</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="team-item">
-                                <img src="assets/images/am4.png" alt="Team">
-                                <div class="team-des">
-                                    <h3>Fitness with Finesse</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
+
+        </div>
+
+
+
+      <div class="vertical-slider-container">
+          <div class="vertical-slider">
+              <div class="vertical-slide">
+                  <img src="assets/images/am1.png" alt="Image">
+              </div>
+              <div class="vertical-slide">
+                  <img src="assets/images/am2.png" alt="Image">
+              </div>
+              <div class="vertical-slide">
+                  <img src="assets/images/am4.png" alt="Image">
+              </div>
+              <div class="vertical-slide">
+                  <img src="assets/images/am6.png" alt="Image">
+              </div>
+              <div class="vertical-slide">
+                  <img src="assets/images/am7.png" alt="Image">
+              </div>
+          </div>
+      
+          <div class="vertical-slider-controls">
+              <button class="vertical-slider-btn left-btn">←</button>
+              <button class="vertical-slider-btn right-btn">→</button>
+          </div>
+      
+          <div class="vertical-indicators"></div>
+      </div>
+      
+      <style>
+          .vertical-slider-container {
+              width: 100%;
+              max-width: 100%;
+              position: relative;
+              overflow: hidden;
+              margin: 0 auto 90px auto;
+              height: 600px; /* Adjust as needed */
+          }
+      
+          .vertical-slider {
+              display: flex;
+              flex-direction: column;
+              transition: transform 0.5s ease-in-out;
+              height: 100%;
+          }
+      
+          .vertical-slide {
+              min-height: 100%;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: white;
+              flex-shrink: 0;
+          }
+      
+          .vertical-slide img {
+              width: auto;
+              height: 100%;
+              object-fit: cover;
+          }
+      
+          .vertical-slider-controls {
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: 20px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 0 30px;
+              pointer-events: none;
+          }
+      
+          .vertical-slider-btn {
+              background-color: rgba(255, 255, 255, 0.7);
+              border: none;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              font-size: 24px;
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: background-color 0.3s;
+              z-index: 10;
+              pointer-events: auto;
+          }
+      
+          .vertical-slider-btn:hover {
+              background-color: rgba(255, 255, 255, 0.9);
+          }
+      
+          .vertical-indicators {
+              position: absolute;
+              right: 20px;
+              top: 50%;
+              transform: translateY(-50%);
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+          }
+      
+          .vertical-indicator {
+              width: 12px;
+              height: 12px;
+              border-radius: 50%;
+              background-color: rgba(255, 255, 255, 0.5);
+              cursor: pointer;
+              transition: background-color 0.3s;
+          }
+      
+          .vertical-indicator.active {
+              background-color: white;
+          }
+      
+          /* Responsive for Mobile */
+          @media (max-width: 768px) {
+              .vertical-slider-container {
+                  height: 500px;
+              }
+          }
+      </style>
+      
+      <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              const slider = document.querySelector('.vertical-slider');
+              const slides = document.querySelectorAll('.vertical-slide');
+              const leftBtn = document.querySelector('.left-btn');
+              const rightBtn = document.querySelector('.right-btn');
+              const indicatorsContainer = document.querySelector('.vertical-indicators');
+      
+              let currentSlide = 0;
+              const totalSlides = slides.length;
+      
+              // Create indicators
+              for (let i = 0; i < totalSlides; i++) {
+                  const indicator = document.createElement('div');
+                  indicator.classList.add('vertical-indicator');
+                  if (i === 0) indicator.classList.add('active');
+                  indicator.dataset.index = i;
+                  indicatorsContainer.appendChild(indicator);
+      
+                  indicator.addEventListener('click', function () {
+                      goToSlide(parseInt(this.dataset.index));
+                  });
+              }
+      
+              const indicators = document.querySelectorAll('.vertical-indicator');
+      
+              function updateSlider() {
+                  slider.style.transform = `translateY(-${currentSlide * 100}%)`;
+                  indicators.forEach((ind, index) => {
+                      ind.classList.toggle('active', index === currentSlide);
+                  });
+              }
+      
+              function goToSlide(index) {
+                  currentSlide = index;
+                  updateSlider();
+              }
+      
+              function nextSlide() {
+                  currentSlide = (currentSlide + 1) % totalSlides;
+                  updateSlider();
+              }
+      
+              function prevSlide() {
+                  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                  updateSlider();
+              }
+      
+              rightBtn.addEventListener('click', nextSlide);
+              leftBtn.addEventListener('click', prevSlide);
+      
+              let slideInterval = setInterval(nextSlide, 5000);
+      
+              slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
+              slider.addEventListener('mouseleave', () => slideInterval = setInterval(nextSlide, 5000));
+      
+              document.addEventListener('keydown', function (e) {
+                  if (e.key === 'ArrowLeft') {
+                      prevSlide();
+                  } else if (e.key === 'ArrowRight') {
+                      nextSlide();
+                  }
+              });
+      
+              let touchStartY = 0;
+              let touchEndY = 0;
+      
+              slider.addEventListener('touchstart', function (e) {
+                  touchStartY = e.changedTouches[0].screenY;
+              });
+      
+              slider.addEventListener('touchend', function (e) {
+                  touchEndY = e.changedTouches[0].screenY;
+                  handleSwipe();
+              });
+      
+              function handleSwipe() {
+                  const swipeThreshold = 50;
+                  if (touchEndY < touchStartY - swipeThreshold) {
+                      nextSlide(); 
+                  } else if (touchEndY > touchStartY + swipeThreshold) {
+                      prevSlide(); 
+                  }
+              }
+          });
+      </script>
+      
+
+      <div style="font-family: Raleway; background-color: white; margin:0; padding:0; box-sizing: border-box;">
+        <div style="width: 100%; display: flex; justify-content: center;">
+            <h1 style="text-align: center; font-size: 2.0em; letter-spacing: 1px; padding: 40px; color: black;">Floor Plans</h1>
+          </div>      
+        <div style="padding: 20px; display: flex; flex-wrap: wrap; justify-content: center;">
+      
+          <!-- Image 1 -->
+          <div style="box-sizing: content-box; margin: 10px; height: 300px; width: 300px; overflow: hidden; display: inline-block; color: white; position: relative; background-color: white; cursor: pointer;">
+
+            <img src="assets/images/floor1.png" style="height: 300px; width: 300px; object-fit: cover; filter: blur(4px); transform: scale(1.0); transition: transform 0.4s ease;">
+          
+            <div style="height: 300px; width: 300px; background-color: rgba(0,0,0,0); position: absolute; top: 0; left: 0; transition: background-color 0.3s ease;"></div>
+          
+            <!-- Centered Enquire Button -->
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
             </div>
-        </section>
+          
+          
+          </div>
+          
+      
+          <!-- Image 2 -->
+          <div style="box-sizing: content-box; margin: 10px; height: 300px; width: 300px; overflow: hidden; display: inline-block; color: white; position: relative; background-color: white; cursor: pointer;">
+
+            <img src="assets/images/floor1.png" style="height: 300px; width: 300px; object-fit: cover; filter: blur(4px); transform: scale(1.0); transition: transform 0.4s ease;">
+          
+            <div style="height: 300px; width: 300px; background-color: rgba(0,0,0,0); position: absolute; top: 0; left: 0; transition: background-color 0.3s ease;"></div>
+          
+            <!-- Centered Enquire Button -->
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+            </div>
+          
+          
+          </div>
+
+        <!-- Image 3 -->
+        <div style="box-sizing: content-box; margin: 10px; height: 300px; width: 300px; overflow: hidden; display: inline-block; color: white; position: relative; background-color: white; cursor: pointer;">
+
+            <img src="assets/images/floor1.png" style="height: 300px; width: 300px; object-fit: cover; filter: blur(4px); transform: scale(1.0); transition: transform 0.4s ease;">
+          
+            <div style="height: 300px; width: 300px; background-color: rgba(0,0,0,0); position: absolute; top: 0; left: 0; transition: background-color 0.3s ease;"></div>
+          
+            <!-- Centered Enquire Button -->
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+            </div>
+          
+          
+          </div>
+
+        <!-- Image 4 -->
+        <div style="box-sizing: content-box; margin: 10px; height: 300px; width: 300px; overflow: hidden; display: inline-block; color: white; position: relative; background-color: white; cursor: pointer;">
+
+            <img src="assets/images/floor1.png" style="height: 300px; width: 300px; object-fit: cover; filter: blur(4px); transform: scale(1.0); transition: transform 0.4s ease;">
+          
+            <div style="height: 300px; width: 300px; background-color: rgba(0,0,0,0); position: absolute; top: 0; left: 0; transition: background-color 0.3s ease;"></div>
+          
+            <!-- Centered Enquire Button -->
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+            </div>
+          
+          
+          </div>
+          <!-- Similarly, add more images... -->
+      
+        </div>
+      </div>
+      
+          
 
 
 
@@ -1291,37 +1520,37 @@
                     <div class="col-xl-6 col-lg-8">
                         <div class="instagram-posts">
                             <div class="instagram-item">
-                                <img src="assets/images/instagram/instagram1.png" alt="Instagram">
+                                <img src="" alt="">
                                 <div class="instagram-overlay">
                                     <a href="#"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                             <div class="instagram-item">
-                                <img src="assets/images/instagram/instagram2.png" alt="Instagram">
+                                <img src="" alt="">
                                 <div class="instagram-overlay">
                                     <a href="#"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                             <div class="instagram-item">
-                                <img src="assets/images/instagram/instagram3.png" alt="Instagram">
+                                <img src="" alt="">
                                 <div class="instagram-overlay">
                                     <a href="#"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                             <div class="instagram-item">
-                                <img src="assets/images/instagram/instagram4.png" alt="Instagram">
+                                <img src="" alt="">
                                 <div class="instagram-overlay">
                                     <a href="#"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                             <div class="instagram-item">
-                                <img src="assets/images/instagram/instagram5.png" alt="Instagram">
+                                <img src="" alt="">
                                 <div class="instagram-overlay">
                                     <a href="#"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                             <div class="instagram-item">
-                                <img src="assets/images/instagram/instagram6.png" alt="Instagram">
+                                <img src="" alt="">
                                 <div class="instagram-overlay">
                                     <a href="#"><i class="fab fa-instagram"></i></a>
                                 </div>
