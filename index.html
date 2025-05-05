@@ -52,7 +52,7 @@
                 <div class="container">
                     <div class="top-inner">
                         <div class="logo-outer">
-                            <div class="logo"><a href="#"><img src="assets/images/blossom_logo-removebg-preview.png"  alt="Logo" style="width: 219px; height: 60px; object-fit: contain;"></a></div>
+                            <div class="logo"><a href="#"><img src="assets/images/blossom_logo-removebg-preview.png"  alt="Logo" style="width: 219px; height: 42px; object-fit: contain;"></a></div>
                         </div>
 
                         <ul class="header-info">
@@ -96,9 +96,9 @@
                                         <li class="current"><a href="#">Home</a></li>
                                         <li><a href="#pricing-plans">Pricing Plans</a></li>
                                         <li><a href="#about-us">About Us</a></li>
-                                        <li><a href="#">Amenities</a></li>
-                                        <li><a href="#">Floor Plans</a></li>
-                                        <li><a href="#">Contact us</a></li>
+                                        <li><a href="#amenities">Amenities</a></li>
+                                        <li><a href="#floorplans">Floor Plans</a></li>
+                                        <li><a href="#contact-form">Contact us</a></li>
                                     </ul>
                                 </div>  
 
@@ -359,82 +359,116 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- VIEW BUTTONS TABLE EXAMPLE -->
-  <table style="width:100%; border-collapse: collapse; font-family: 'Segoe UI', Arial, sans-serif;">
+  <table style="width:100%; border-collapse: collapse; font-family: 'Segoe UI', Arial, sans-serif; min-width: 300px;">
     <thead>
         <tr style="background-color: #2c3e50; color: white;">
-            <th style="padding: 12px 8px; text-align: left;">CONFIGURATION</th>
-            <th style="padding: 12px 8px; text-align: left;">CARPET AREA</th>
-            <th style="padding: 12px 8px; text-align: left;">PRICING</th>
-            <th style="padding: 12px 8px; text-align: center;">PRICE SHEET</th>
+            <th style="padding: 8px 4px; text-align: left;">CONFIGURATION</th>
+            <th style="padding: 8px 4px; text-align: left;">CARPET AREA</th>
+            <th style="padding: 8px 4px; text-align: left;">PRICING</th>
+            <th style="padding: 8px 4px; text-align: center;">PRICE SHEET</th>
         </tr>
     </thead>
     <tbody>
         <tr style="background-color: #f8f8f8; border-bottom: 1px solid #eaeaea;">
-            <td style="padding: 12px 8px;">1 BHK</td>
-            <td style="padding: 12px 8px; white-space: nowrap;">500 Sq.Ft</td>
-            <td style="padding: 12px 8px; white-space: nowrap;">57.70 Lacs*</td>
-            <td style="padding: 12px 8px; text-align: center;">
-              <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
-        </tr>
-        <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
-            <td style="padding: 12px 8px;">2 BHK</td>
-            <td style="padding: 12px 8px; white-space: nowrap;">600 Sq.Ft</td>
-            <td style="padding: 12px 8px; white-space: nowrap;">69 Lacs*</td>
-            <td style="padding: 12px 8px; text-align: center;">
-                  <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+            <td style="padding: 8px 4px;">1 BHK</td>
+            <td style="padding: 8px 4px;">500 Sq.Ft</td>
+            <td style="padding: 8px 4px;">57.70 Lacs*</td>
+            <td style="padding: 8px 4px; text-align: center;">
+              <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 8px; border-radius: 6px; font-weight: 600; cursor: pointer; width: 100%; max-width: 100px; font-size: 14px;">View</button>
             </td>
         </tr>
         <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
-          <td style="padding: 12px 8px;">2 BHK</td>
-          <td style="padding: 12px 8px; white-space: nowrap;">600 Sq.Ft</td>
-          <td style="padding: 12px 8px; white-space: nowrap;">69 Lacs*</td>
-          <td style="padding: 12px 8px; text-align: center;">
-          <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+            <td style="padding: 8px 4px;">2 BHK</td>
+            <td style="padding: 8px 4px;">600 Sq.Ft</td>
+            <td style="padding: 8px 4px;">69 Lacs*</td>
+            <td style="padding: 8px 4px; text-align: center;">
+              <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 8px; border-radius: 6px; font-weight: 600; cursor: pointer; width: 100%; max-width: 100px; font-size: 14px;">View</button>
+            </td>
+        </tr>
+        <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
+          <td style="padding: 8px 4px;">2 BHK</td>
+          <td style="padding: 8px 4px;">600 Sq.Ft</td>
+          <td style="padding: 8px 4px;">69 Lacs*</td>
+          <td style="padding: 8px 4px; text-align: center;">
+            <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 8px; border-radius: 6px; font-weight: 600; cursor: pointer; width: 100%; max-width: 100px; font-size: 14px;">View</button>
           </td>
-      </tr>
-      <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
-        <td style="padding: 12px 8px;">2 BHK</td>
-        <td style="padding: 12px 8px; white-space: nowrap;">600 Sq.Ft</td>
-        <td style="padding: 12px 8px; white-space: nowrap;">69 Lacs*</td>
-        <td style="padding: 12px 8px; text-align: center;">
-                          <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
-        </td>
-    </tr>
-    <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
-      <td style="padding: 12px 8px;">2 BHK</td>
-      <td style="padding: 12px 8px; white-space: nowrap;">600 Sq.Ft</td>
-      <td style="padding: 12px 8px; white-space: nowrap;">69 Lacs*</td>
-      <td style="padding: 12px 8px; text-align: center;">
-                        <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
-      </td>
-  </tr>
-  <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
-    <td style="padding: 12px 8px;">2 BHK</td>
-    <td style="padding: 12px 8px; white-space: nowrap;">600 Sq.Ft</td>
-    <td style="padding: 12px 8px; white-space: nowrap;">69 Lacs*</td>
-    <td style="padding: 12px 8px; text-align: center;">
-                      <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
-    </td>
-</tr>
-<tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
-  <td style="padding: 12px 8px;">2 BHK</td>
-  <td style="padding: 12px 8px; white-space: nowrap;">600 Sq.Ft</td>
-  <td style="padding: 12px 8px; white-space: nowrap;">69 Lacs*</td>
-  <td style="padding: 12px 8px; text-align: center;">
-                    <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
-  </td>
-</tr>
+        </tr>
+        <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
+          <td style="padding: 8px 4px;">2 BHK</td>
+          <td style="padding: 8px 4px;">600 Sq.Ft</td>
+          <td style="padding: 8px 4px;">69 Lacs*</td>
+          <td style="padding: 8px 4px; text-align: center;">
+            <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 8px; border-radius: 6px; font-weight: 600; cursor: pointer; width: 100%; max-width: 100px; font-size: 14px;">View</button>
+          </td>
+        </tr>
+        <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
+          <td style="padding: 8px 4px;">2 BHK</td>
+          <td style="padding: 8px 4px;">600 Sq.Ft</td>
+          <td style="padding: 8px 4px;">69 Lacs*</td>
+          <td style="padding: 8px 4px; text-align: center;">
+            <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 8px; border-radius: 6px; font-weight: 600; cursor: pointer; width: 100%; max-width: 100px; font-size: 14px;">View</button>
+          </td>
+        </tr>
+        <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
+          <td style="padding: 8px 4px;">2 BHK</td>
+          <td style="padding: 8px 4px;">600 Sq.Ft</td>
+          <td style="padding: 8px 4px;">69 Lacs*</td>
+          <td style="padding: 8px 4px; text-align: center;">
+            <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 8px; border-radius: 6px; font-weight: 600; cursor: pointer; width: 100%; max-width: 100px; font-size: 14px;">View</button>
+          </td>
+        </tr>
+        <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
+          <td style="padding: 8px 4px;">2 BHK</td>
+          <td style="padding: 8px 4px;">600 Sq.Ft</td>
+          <td style="padding: 8px 4px;">69 Lacs*</td>
+          <td style="padding: 8px 4px; text-align: center;">
+            <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 8px; border-radius: 6px; font-weight: 600; cursor: pointer; width: 100%; max-width: 100px; font-size: 14px;">View</button>
+          </td>
+        </tr>
         <tr style="background-color: #f8f8f8; border-bottom: 1px solid #eaeaea;">
-            <td style="padding: 12px 8px;">2 BHK</td>
-            <td style="padding: 12px 8px; white-space: nowrap;">650 Sq.Ft</td>
-            <td style="padding: 12px 8px; white-space: nowrap;">71 Lacs*</td>
-            <td style="padding: 12px 8px; text-align: center;">
-                <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+            <td style="padding: 8px 4px;">2 BHK</td>
+            <td style="padding: 8px 4px;">650 Sq.Ft</td>
+            <td style="padding: 8px 4px;">71 Lacs*</td>
+            <td style="padding: 8px 4px; text-align: center;">
+              <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 8px; border-radius: 6px; font-weight: 600; cursor: pointer; width: 100%; max-width: 100px; font-size: 14px;">View</button>
             </td>
         </tr>
     </tbody>
 </table>
-  
+
+<style>
+/* Mobile responsive styles */
+@media only screen and (max-width: 767px) {
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 6px 3px !important;
+    }
+    
+    button {
+        padding: 6px 4px !important;
+        font-size: 12px !important;
+    }
+}
+
+/* Very small screens */
+@media only screen and (max-width: 480px) {
+    table {
+        font-size: 12px;
+    }
+    
+    th, td {
+        padding: 4px 2px !important;
+    }
+}
+</style>
+
+<!-- Add this to the head of your document -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Add this to the head of your document -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- POP-UP FORM -->
   <div id="popupForm" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.5); z-index: 9999; justify-content: center; align-items: center;">
     <div style="width: 90%; max-width: 450px; background: white; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); display: flex; flex-direction: row; overflow: hidden; animation: popupAnim 0.4s ease-in-out;">
@@ -808,7 +842,7 @@
                         
                         
             
-      <div style="font-family: Raleway; background-color:white; margin:0; padding:0; box-sizing: border-box;">
+      <div style="font-family: Raleway; background-color:white; margin:0; padding:0; box-sizing: border-box;" div id="floorplans" class="section">
         <div style="width: 100%; display: flex; justify-content: center;">
             <h1 style="text-align: center; font-size: 2.0em; letter-spacing: 1px; padding: 40px; color: black;">Floor Plans</h1>
           </div>      
@@ -1034,7 +1068,7 @@
           <br>
           
 
-          <div style="text-align: center; width: 100%;">
+          <div style="text-align: center; width: 100%;" div id="amenities" class="section">
             <h1 style="font-size: 40px; font-weight: 80; font-family: 'Montserrat', 'Roboto Condensed', 'Impact', sans-serif; color: #222; display: inline-block; text-transform: none; letter-spacing: -0.5px; margin: 0;">
               Amenities
             </h1>
@@ -2292,9 +2326,9 @@
         <!--==================================================================== 
             Start Contact Section
         =====================================================================-->
-        <section class="contact-section mb-250" style="background-image: url('assets/images/contact/contact-section.png');">
-            <div class="container">
-                <div class="row justify-content-center">
+        <section class="contact-section mb-250" style="background-image: url('assets/images/contact/contact-section.png'); ">
+          <div id="contact-form" class="container">
+            <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-10">
                         <form class="contact-form bg-white mt-100 rmt-0" action="#">
                            <div class="section-title text-center mb-40">
@@ -2337,7 +2371,39 @@
             </div>
         </section>
 
-
+        <style>
+          .map-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* Default 16:9 ratio */
+          }
+        
+          .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+          }
+        
+          @media (max-width: 768px) {
+            .map-container {
+              padding-bottom: 150%; /* Taller map for mobile */
+            }
+          }
+        </style>
+        
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d7527.89545200352!2d72.815262!3d19.371416!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3be7af5d6301f517%3A0xf4d6e22d160e45a5!2sBurger%20King%2C%20Phz%202%2C%20Bhabola%2C%20Richmond%20Town%2C%20Shop%20No%201%2C%20Building%20No%202%2C%20Homage%20Bhavan%2C%20Vasai-Virar%2C%20Maharashtra%20401202!3m2!1d19.3678878!2d72.8165178!4m5!1s0x3be7af59199e0db7%3A0x2df5161db00cea2c!2sBLOSSOM%206A%2C%209RG8%2B57H%2C%20Chulne%2C%20Vasai%20West%2C%20Vasai-Virar%2C%20Sandor%2C%20Maharashtra%20401202!3m2!1d19.3754349!2d72.81574499999999!5e0!3m2!1sen!2sin!4v1746468781407!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        
 
         <!--==================================================================== 
            Start Footer Section
@@ -2410,16 +2476,108 @@
               </div>
           </div>
       </footer>
+
+      <!-- WhatsApp Floating Button -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<div class="whatsapp_float">
+    <a target="_blank" href="https://wa.me/91XXXXXXXXXX"> <!-- Replace with your WhatsApp number -->
+      <div class="whatsapp_icon">
+        <i class="fa fa-whatsapp"></i>
+      </div>
+    </a>
+    <p class="whatsapp_text">Talk to us?</p>
+</div>
+
+<style>
+/* WhatsApp Button Styles */
+.whatsapp_float {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Higher z-index to ensure it's on top */
+}
+
+.whatsapp_icon {
+  background-color: #25D366;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: pulse 1.5s infinite;
+  animation: pulse 1.5s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.whatsapp_text {
+  margin-top: 5px;
+  color: #707070;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Override any conflicting styles */
+.whatsapp_float a {
+  text-decoration: none !important;
+}
+
+/* Ensure positioning works across browsers */
+@media screen and (max-width: 767px) {
+  .whatsapp_float {
+    bottom: 30px;
+    right: 10px;
+  }
+}
+</style>
+
         <!--==================================================================== 
            End Footer Section
         =====================================================================-->
+
+        
 
     </div>
     <!--End pagewrapper-->
 
 
     <!-- Scroll Top Button -->
-    <button class="scroll-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></button>
 
 
     <!-- jequery plugins -->
