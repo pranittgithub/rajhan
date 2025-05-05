@@ -38,7 +38,7 @@
 }
 
 .header-info li i {
-    color: #ca9c6a;
+    color: #800038;
     font-size: 25px;
     margin-right: 25px;
 }
@@ -48,7 +48,7 @@
 }
 
 .header-info li h6 span {
-    color: #ca9c6a;
+    color: #800038;
     display: block;
     margin-bottom: 8px;
 }
@@ -137,7 +137,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 55px 0 20px;
-    border-left: 7px solid #ca9c6a;
+    border-left: 7px solid #800038;
 }
 
 .main-header .logo {
@@ -192,7 +192,7 @@
 
 .main-menu .navigation > li:hover > a,
 .main-menu .navigation > li.current > a {
-    border-top-color: #ca9c6a;
+    border-top-color: #800038;
     background: #272727;
 }
 
@@ -360,7 +360,7 @@
     .header-inner {
         display: block;
         padding: 6px 15px;
-        border-left: 4px solid #ca9c6a;
+        border-left: 4px solid #800038;
     }
 
     .menu-icons {
@@ -420,7 +420,7 @@
 
     .main-menu .navigation li:hover > a,
     .main-menu .navigation li.current > a {
-        color: #ca9c6a;
+        color: #800038;
     }
 
     .main-menu .navigation li .megamenu {
@@ -598,7 +598,7 @@
 .hidden-bar .appointment-form .form-group button {
     width: 100%;
     padding: 12px 30px;
-    background: #ca9c6a;
+    background: #800038;
     margin-bottom: 20px;
     letter-spacing: 2px;
 }
