@@ -94,10 +94,10 @@
                                 <div class="navbar-collapse collapse clearfix">
                                     <ul class="navigation clearfix">
                                         <li class="current"><a href="#">Home</a></li>
-                                        <li><a href="#">project</a></li>
-                                        <li><a href="#">services</a></li>
-                                        <li><a href="#">about</a></li>
-                                        <li><a href="#">blog</a></li>
+                                        <li><a href="#">Pricing Plans</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Amenities</a></li>
+                                        <li><a href="#">Floor Plans</a></li>
                                         <li><a href="#">Contact us</a></li>
                                     </ul>
                                 </div>
@@ -107,6 +107,28 @@
                         </div>
 
                         <div class="menu-icons">
+                          <button onclick="openForm()" style="
+    background: linear-gradient(45deg, #2b5876, #4e4376);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: fit-content;
+    margin: auto 0;
+" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';" 
+  onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)';">
+    <i class="fas fa-file-download" style="font-size: 12px;"></i>
+    Download Brochure
+</button>
                             <!-- Menu Serch Box-->
                             <!-- <div class="nav-search ml-15">
                                 <button class="fa fa-search"></button>
@@ -168,7 +190,7 @@
               
               <!-- Added logos container -->
               <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
-                <img src="assets/images/Rajhans-logo-main-removebg-preview.png" alt="Rajhans Logo" style="max-width: 100px; height: auto; object-fit: contain;">
+                <img src="assets/images/rajhans-og.png" alt="Rajhans Logo" style="max-width: 100px; height: auto; object-fit: contain;">
                 <img src="assets/images/blossom_logo-removebg-preview.png" alt="Blossom Logo" style="max-width: 100px; height: auto; object-fit: contain;">
               </div>
               
@@ -272,40 +294,67 @@
 
 <!-- Branding Card -->
 <div class="highlight-card" style="margin-top: -150px; width: 400px; margin-left: auto; margin-right: auto; padding: 30px 20px; background: #fff; border-radius: 16px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); text-align: center; font-family: sans-serif;">
-  <p style="color: #800038; font-weight: 600; margin-bottom: 10px;">PRESENTING</p>
 
+  <!-- Top Section with Logos and Taglines -->
+  <p style="color: #800038; font-weight: 600; margin-bottom: 10px;">PRESENTING</p>
   <img src="assets/images/blossom_logo-removebg-preview.png" alt="Blossom" style="width: 220px; margin-bottom: 10px;" />
   <p style="font-size: 14px; font-style: italic; color: #5a5a5a; margin: 0 0 10px;">Where life blooms...</p>
-
   <p style="font-size: 16px; font-weight: 700; color: #800038; margin: 0 0 10px;">At Vasai West by</p>
+  <img src="assets/images/rajhans-og.png" alt="Rajhans" style="width: 140px; margin: 10px auto 20px;" />
 
-  <img src="assets/images/Rajhans-logo-main-removebg-preview.png" alt="Rajhans" style="width: 140px; margin: 10px auto 20px;" />
+  <!-- Highlights Section -->
+  <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 25px;">
+    <div style="background: #800038; color: white; padding: 12px 20px; border-radius: 10px; font-weight: 600; animation: popInOut 1s ease-in-out infinite;">16 STOREY TOWER</div>
+    <div style="background: #800038; color: white; padding: 12px 20px; border-radius: 10px; font-weight: 600; animation: popInOut 1s ease-in-out infinite;">1, 2 AND 3 BHK</div>
+    <div style="background: #800038; color: white; padding: 12px 20px; border-radius: 10px; font-weight: 600; animation: popInOut 1s ease-in-out infinite;">10:90 PAYMENT PLAN</div>
+    <div style="background: #800038; color: white; padding: 12px 20px; border-radius: 10px; font-weight: 600; animation: popInOut 1s ease-in-out infinite;">SPOT BOOKING OFFER</div>
+  </div>
 
-  <!-- Highlights with animation -->
-  <div style="display: flex; flex-direction: column; gap: 12px;">
-    <div style="background: #800038; color: white; padding: 12px 20px; border-radius: 10px; font-weight: 600; animation: popInOut 1s ease-in-out infinite; transform-origin: center;">16 STOREY TOWER</div>
-    <div style="background: #800038; color: white; padding: 12px 20px; border-radius: 10px; font-weight: 600; animation: popInOut 1s ease-in-out infinite; transform-origin: center;">1, 2 AND 3 BHK</div>
-    <div style="background: #800038; color: white; padding: 12px 20px; border-radius: 10px; font-weight: 600; animation: popInOut 1s ease-in-out infinite; transform-origin: center;">10:90 PAYMENT PLAN</div>
-    <div style="background: #800038; color: white; padding: 12px 20px; border-radius: 10px; font-weight: 600; animation: popInOut 1s ease-in-out infinite; transform-origin: center;">SPOT BOOKING OFFER</div>
+  <!-- Exclusive Offer Form -->
+  <h2 style="color: #0d1b2a; font-size: 20px; margin-bottom: 5px;">Exclusive Offer!</h2>
+  <p style="font-size: 14px; color: #555; margin-bottom: 20px;">Register now for special pricing and priority selection</p>
+
+  <form>
+    <input type="text" placeholder="Your Name" required style="width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px;">
+
+    <div style="display: flex; margin-bottom: 12px;">
+      <span style="padding: 12px; background: #f0f0f0; border: 1px solid #ccc; border-right: none; border-radius: 8px 0 0 8px; font-size: 14px;">+91</span>
+      <input type="tel" placeholder="Contact Number" required style="flex: 1; padding: 12px; border: 1px solid #ccc; border-left: none; border-radius: 0 8px 8px 0; font-size: 14px;">
+    </div>
+
+    <input type="email" placeholder="Email (Optional)" style="width: 100%; padding: 12px; margin-bottom: 18px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px;">
+
+    <button type="submit" style="width: 100%; padding: 14px; background-color: #0d1b2a; color: white; border: none; border-radius: 8px; font-weight: 600; font-size: 14px;">
+      GET INSTANT CALLBACK
+    </button>
+  </form>
+
+  <!-- Icon Row -->
+  <div style="display: flex; justify-content: space-around; margin-top: 20px; font-size: 12px; color: #333;">
+    <div style="text-align: center;">📞<br>Quick Response</div>
+    <div style="text-align: center;">🏠<br>Free Site Visit</div>
+    <div style="text-align: center;">🏷️<br>Best Pricing</div>
   </div>
 </div>
 
-<!-- Inline animation CSS -->
+<!-- Animation CSS -->
 <style>
 @keyframes popInOut {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
 }
 </style>
+
+<br>
 <br>
 
-<h2 style="text-align: center; font-size: 28px; font-weight: 700; color: #800038; margin-top: 40px; margin-bottom: 20px; font-family: sans-serif;">
-  PRICING PLANS
-</h2>
+
+
+<div style="text-align: center; margin-bottom: 20px;">
+  <h3 style="color: #070707; margin-bottom: 15px; font-size: 24px;">Pricing Plans</h3>
+</div>
+
+
 <!-- Add this in the <head> for icons (optional but matches your style) -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -332,7 +381,7 @@
             <td style="padding: 12px 8px; white-space: nowrap;">600 Sq.Ft</td>
             <td style="padding: 12px 8px; white-space: nowrap;">69 Lacs*</td>
             <td style="padding: 12px 8px; text-align: center;">
-                <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
+                  <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>            </td>
             </td>
         </tr>
         <tr style="background-color: white; border-bottom: 1px solid #eaeaea;">
@@ -443,7 +492,7 @@
               </div>
           
               <div>
-                <img src="assets/images/Rajhans-logo-main-removebg-preview.png" alt="Rajhans Kshitij Logo" style="max-width: 200px; height: auto;" />
+                <img src="assets/images/rajhans-og.png" alt="Rajhans Kshitij Logo" style="max-width: 200px; height: auto;" />
               </div>
             </div>
           </section>
@@ -1174,6 +1223,22 @@
       
         </div>
       </div>
+
+<!-- Cost Sheet Section -->
+<div style="margin-top: 30px; text-align: center;">
+  <h3 style="color: #070707; margin-bottom: 15px;">Cost Sheet</h3>
+
+  <div style="position: relative; display: inline-block; width: 100%; max-width: 350px;">
+    <img src="assets/images/cs.png" alt="Cost Sheet" style="width: 100%; filter: blur(4px); border-radius: 10px;" />
+    
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <button onclick="openForm()" style="background: #121212; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">View</button>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
       
       <div class="faq-container">
         <h2>Within Touching Distance</h2>
@@ -1612,49 +1677,76 @@
 <br>
 
 
-<div class="drone-video-container">
+<div class="drone-video-container" style="margin-top: 30px;">
   <div class="drone-heading">
     <h2>Anchor Shoot</h2>
   </div>
-  <!-- Thumbnail and video container -->
+
   <div class="video-wrapper">
-    <!-- Thumbnail image that shows before video plays -->
-    <img src="assets/images/anchor.png" alt="Drone footage thumbnail" class="video-thumbnail" id="videoThumbnail" />
-    
-    <!-- Play button overlay on thumbnail -->
-    <div class="play-button" id="playButton">
+    <img src="assets/images/anchor.png" alt="Anchor footage thumbnail" class="video-thumbnail" id="anchorVideoThumbnail" />
+
+    <div class="play-button" id="anchorPlayButton">
       <span>▶</span>
     </div>
 
-    <!-- Space for custom button -->
     <div class="custom-button-space">
-      <!-- Your button will go here -->
+      <!-- Optional buttons -->
     </div>
   </div>
+
+  <!-- Custom styled popup form for Anchor Shoot -->
+  <div id="anchorPopupForm" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.7); backdrop-filter: blur(5px); z-index: 9999; justify-content: center; align-items: center; overflow-y: auto;">
+    <div style="width: 90%; max-width: 450px; background: white; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.3); display: flex; flex-direction: row; overflow: hidden; animation: popupAnim 0.4s ease-in-out; margin: 50px auto;">
+      
+      <!-- Left Promise Panel -->
+      <div style="background: #800038; color: white; padding: 22px 15px; width: 40%; font-family: 'Segoe UI', Arial, sans-serif;">
+        <h3 style="font-size: 18px; margin-top: 0; margin-bottom: 20px; font-weight: 600;">We Promise</h3>
+        
+        <div style="display: flex; align-items: center; margin: 16px 0;">
+          <i class="fa-solid fa-phone" style="margin-right: 8px; font-size: 18px;"></i>
+          <p style="margin: 0; font-size: 14px; font-weight: 500;">Instant Call Back</p>
+        </div>
+        
+        <div style="display: flex; align-items: center; margin: 16px 0;">
+          <i class="fa-solid fa-car" style="margin-right: 8px; font-size: 18px;"></i>
+          <p style="margin: 0; font-size: 14px; font-weight: 500;">Free Site Visit</p>
+        </div>
+        
+        <div style="display: flex; align-items: center; margin: 16px 0;">
+          <span style="margin-right: 8px; font-size: 18px;">&#36;</span>
+          <p style="margin: 0; font-size: 14px; font-weight: 500;">Unmatched Price</p>
+        </div>
+      </div>
   
-  <!-- Popup form (hidden initially) -->
-  <div id="popupForm" class="popup-form">
-    <div class="popup-content">
-      <span class="close-btn" id="closePopup">&times;</span>
-      <h3>Enter Your Information</h3>
-      <form id="contactForm">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+      <!-- Right Form -->
+      <div style="padding: 22px 20px; width: 60%; position: relative; font-family: 'Segoe UI', Arial, sans-serif;">
+        <span id="anchorClosePopup" style="position: absolute; right: 12px; top: 12px; cursor: pointer; font-size: 20px; color: #666;">&times;</span>
+        
+        <!-- Added logos container -->
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+          <img src="assets/images/rajhans-og.png" alt="Rajhans Logo" style="max-width: 100px; height: auto; object-fit: contain;">
+          <img src="assets/images/blossom_logo-removebg-preview.png" alt="Blossom Logo" style="max-width: 100px; height: auto; object-fit: contain;">
         </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone">
-        </div>
-        <button type="submit" class="submit-btn">Submit</button>
-      </form>
+        
+        <h3 style="color: #800038; margin-top: 0; margin-bottom: 10px; font-size: 20px; font-weight: 600; text-align: center;">Virtual Site Visit</h3>
+        <p style="font-size: 13px; color: #444; margin-bottom: 20px; line-height: 1.4; text-align: center;">Register Here And Avail The <span style="color: #ca9c6a; font-weight: 600;">Best Offers!!</span></p>
+        
+        <form id="anchorContactForm">
+          <input type="text" id="anchorName" placeholder="Name" style="width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; box-sizing: border-box;" required>
+          
+          <input type="tel" id="anchorPhone" placeholder="Mobile No" style="width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; box-sizing: border-box;" required>
+          
+          <input type="email" id="anchorEmail" placeholder="E-Mail Address" style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; box-sizing: border-box;" required>
+          
+          <button type="submit" style="background: #800038; color: white; padding: 12px; width: 100%; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer; transition: background-color 0.3s;">Start Tour</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
+
+<!-- Add Font Awesome CSS from CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
   .drone-video-container {
@@ -1664,7 +1756,6 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    /* background-color: white; */
     position: relative;
   }
   
@@ -1686,7 +1777,7 @@
     transform: translate(-50%, -50%);
     width: 70px;
     height: 70px;
-    background-color:white;
+    background-color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1696,7 +1787,6 @@
   }
   
   .play-button span {
-    /* color: white; */
     font-size: 30px;
   }
   
@@ -1708,7 +1798,6 @@
     padding: 15px;
     display: flex;
     justify-content: flex-end;
-    /* background-color: #f5f5f5; */
     min-height: 50px;
   }
   
@@ -1727,7 +1816,7 @@
   }
   
   .popup-content {
-    /* background-color: white; */
+    background-color: white;
     padding: 25px;
     border-radius: 8px;
     width: 90%;
@@ -1764,7 +1853,7 @@
   
   .submit-btn {
     background-color: #2196F3;
-    /* color: white; */
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -1778,52 +1867,125 @@
   .submit-btn:hover {
     background-color: #0d8bf2;
   }
+  
+  /* Animation for the anchor popup */
+  @keyframes popupAnim {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  /* Responsive adjustments for anchor form */
+  @media (max-width: 600px) {
+    #anchorPopupForm > div {
+      flex-direction: column;
+      margin: 20px auto;
+    }
+    #anchorPopupForm > div > div:first-child {
+      width: 100%;
+      padding: 15px;
+    }
+    #anchorPopupForm > div > div:last-child {
+      width: 100%;
+    }
+  }
+  
+  /* Add focus styles for inputs in anchor form */
+  #anchorPopupForm input:focus {
+    border-color: #800038 !important;
+    box-shadow: 0 0 0 2px rgba(128, 0, 56, 0.1) !important;
+    outline: none !important;
+  }
+  
+  /* Add hover effect for button in anchor form */
+  #anchorPopupForm button:hover {
+    background-color: #67002e !important;
+  }
 </style>
 
 <script>
-  // Get elements for anchor section
-  const anchorPlayButton = document.getElementById('anchorPlayButton');
-  const anchorPopupForm = document.getElementById('anchorPopupForm');
-  const anchorClosePopup = document.getElementById('anchorClosePopup');
-  const anchorContactForm = document.getElementById('anchorContactForm');
-  
-  // Show popup form when play button is clicked
-  anchorPlayButton.addEventListener('click', function() {
-    anchorPopupForm.style.display = 'flex';
-  });
-  
-  // Close popup when X is clicked
-  anchorClosePopup.addEventListener('click', function() {
-    anchorPopupForm.style.display = 'none';
-  });
-  
-  // Close popup when clicking outside the form
-  window.addEventListener('click', function(event) {
-    if (event.target === anchorPopupForm) {
+  // Wait for the DOM to fully load
+  document.addEventListener('DOMContentLoaded', () => {
+    // Drone video elements
+    const playButton = document.getElementById('playButton');
+    const popupForm = document.getElementById('popupForm');
+    const closePopup = document.getElementById('closePopup');
+    const contactForm = document.getElementById('contactForm');
+
+    // Anchor video elements
+    const anchorPlayButton = document.getElementById('anchorPlayButton');
+    const anchorPopupForm = document.getElementById('anchorPopupForm');
+    const anchorClosePopup = document.getElementById('anchorClosePopup');
+    const anchorContactForm = document.getElementById('anchorContactForm');
+
+    // DRONE VIDEO HANDLERS
+    // Show the form popup when play is clicked
+    playButton.addEventListener('click', () => {
+      popupForm.style.display = 'flex';
+    });
+
+    // Hide popup when close (X) is clicked
+    closePopup.addEventListener('click', () => {
+      popupForm.style.display = 'none';
+    });
+
+    // Hide popup when clicking outside the form
+    window.addEventListener('click', (event) => {
+      if (event.target === popupForm) {
+        popupForm.style.display = 'none';
+      }
+    });
+
+    // Handle form submission
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+
+      console.log("Drone Form Submitted: ", { name, email, phone });
+
+      popupForm.style.display = 'none';
+      contactForm.reset();
+    });
+
+    // ANCHOR VIDEO HANDLERS
+    // Show the form popup when anchor play is clicked
+    anchorPlayButton.addEventListener('click', () => {
+      anchorPopupForm.style.display = 'flex';
+    });
+
+    // Hide anchor popup when close (X) is clicked
+    anchorClosePopup.addEventListener('click', () => {
       anchorPopupForm.style.display = 'none';
-    }
-  });
-  
-  // Handle form submission
-  anchorContactForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const name = document.getElementById('anchorName').value;
-    const email = document.getElementById('anchorEmail').value;
-    const phone = document.getElementById('anchorPhone').value;
-    
-    console.log('Anchor form submitted:', { name, email, phone });
-    // Here you would typically send the data to your server
-    
-    // Close the popup after submission
-    anchorPopupForm.style.display = 'none';
-    
-    // Reset form
-    anchorContactForm.reset();
+    });
+
+    // Hide anchor popup when clicking outside the form
+    anchorPopupForm.addEventListener('click', (event) => {
+      if (event.target === anchorPopupForm) {
+        anchorPopupForm.style.display = 'none';
+      }
+    });
+
+    // Handle anchor form submission
+    anchorContactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById('anchorName').value;
+      const email = document.getElementById('anchorEmail').value;
+      const phone = document.getElementById('anchorPhone').value;
+
+      console.log("Anchor Form Submitted: ", { name, email, phone });
+
+      anchorPopupForm.style.display = 'none';
+      anchorContactForm.reset();
+    });
   });
 </script>
 
 
-      
+<br>
+<br>
 
 
 
@@ -2152,117 +2314,80 @@
                 </div>
             </div>
         </section>
-        <!--==================================================================== 
-            End Contact Section
-        =====================================================================-->
-
-
-
-
-        <!--==================================================================== 
-            Start Call To Action Section
-        =====================================================================-->
-        <!-- <section class="call-action">
-            <div class="container">
-                <div class="call-action-inner">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="section-title text-white rmb-35">
-                              <h6>get quote</h6>
-                               <h2>call for action</h2>
-                           </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <form action="#" class="subscribe">
-                                <input type="email" placeholder="enter your mail" required>
-                                <button type="submit" class="theme-btn style-two">subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!--==================================================================== 
-            End Call To Action Section
-        =====================================================================-->
 
 
 
         <!--==================================================================== 
            Start Footer Section
         =====================================================================-->
+
         <footer class="footer-section pt-220" style="background-image: url('assets/images/footer.png');">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-8">
-                        <div class="instagram-posts">
-                            <div class="instagram-item">
-                                <img src="" alt="">
-                                <div class="instagram-overlay">
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="instagram-item">
-                                <img src="" alt="">
-                                <div class="instagram-overlay">
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="instagram-item">
-                                <img src="" alt="">
-                                <div class="instagram-overlay">
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="instagram-item">
-                                <img src="" alt="">
-                                <div class="instagram-overlay">
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="instagram-item">
-                                <img src="" alt="">
-                                <div class="instagram-overlay">
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="instagram-item">
-                                <img src="" alt="">
-                                <div class="instagram-overlay">
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-4">
-                        <div class="contact-widget">
-                            <h3>Contact</h3>
-                            <h6>+91 96570 555 66</h6>
-                            <h6>RAJHANS KSHITIJ, BLOSSOM WING C&D, NEXT TO SUYOG NAGAR, VASAI RD(W), 401202.
-                            </h6>
-                        </div>
-                    </div>
+          <div class="container">
+              <!-- Add View Button to the left side -->
+              <div class="row mb-4">
+                <div class="col-12">
+                    <button onclick="openForm()" style="
+                        background: linear-gradient(45deg, #2b5876, #4e4376);
+                        color: white;
+                        border: none;
+                        padding: 14px 30px;
+                        border-radius: 8px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        letter-spacing: 0.5px;
+                        cursor: pointer;
+                        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                        transition: all 0.3s ease;
+                        float: left;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    " onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 7px 20px rgba(0,0,0,0.3)';" 
+                      onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.2)';">
+                        <i class="fas fa-file-download" style="font-size: 18px;"></i>
+                        Download Brochure
+                    </button>
                 </div>
             </div>
-            
-            <!-- Footer Bottom Area-->
-            <div class="footer-bottom mt-55">
-               <div class="container">
-                   <div class="bottom-inner">
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                        </div>
-                       <div class="copyright">
-                            <p>© Copyright 2025 by <a href="#">13 IGNITE</a></p>
-                        </div>
-                   </div>
-               </div>
-            </div>
-
-        </footer>
+              <div class="row align-items-center">
+                  <div class="col-xl-6 col-lg-8">
+                      <div class="instagram-posts">
+                          <div class="instagram-item">
+                              <img src="" alt="">
+                              <div class="instagram-overlay">
+                                  <a href="#"><i class="fab fa-instagram"></i></a>
+                              </div>
+                          </div>
+                          <!-- Other instagram items... -->
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-4">
+                      <div class="contact-widget">
+                          <h3>Contact</h3>
+                          <h6>+91 96570 555 66</h6>
+                          <h6>RAJHANS KSHITIJ, BLOSSOM WING C&D, NEXT TO SUYOG NAGAR, VASAI RD(W), 401202.</h6>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Footer Bottom Area-->
+          <div class="footer-bottom mt-55">
+              <div class="container">
+                  <div class="bottom-inner">
+                      <div class="social-icons">
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                          <a href="#"><i class="fab fa-facebook-f"></i></a>
+                          <a href="#"><i class="fab fa-instagram"></i></a>
+                          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                      </div>
+                      <div class="copyright">
+                          <p>© Copyright 2025 by <a href="#">13 IGNITE</a></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
         <!--==================================================================== 
            End Footer Section
         =====================================================================-->
